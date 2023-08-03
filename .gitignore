@@ -1,0 +1,9 @@
+notes.txt*
+*~
+*.swp
+
+*.tif
+output/*
+!output/.keep
+orig-pdfs/
+*.pdf
