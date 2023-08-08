@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export HOME_CMHC=/data/programming/cmhc
-export HOME_OCR=/data/programming/cmhc-ocr
+export HOME_CMHC=/app/cmhc
+export HOME_OCR=/app/cmhc-ocr
 
 ##
 # stage.sh
