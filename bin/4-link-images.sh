@@ -30,14 +30,14 @@ pushd _data/raw_images/${COLLECTION}
 
 if [ ! -z "$(ls -A .)" ]; then
    echo "Directory not empty: ${PWD}"
-   echo "Remove contents then run this script again."
-   exit 1
+#   echo "Remove contents then run this script again."
+#   exit 1
 fi
 
 # Link images
 for x in ${HOME_OCR}/input/${COLLECTION}/${YEAR}/images/*.tif; do ln -s $x ; done
 
-read -p "-> Check linked images" -n 1
+#read -p "-> Check linked images" -n 1
 ls *
 
 echo "ls -l ${HOME_CMHC}/_data/raw_images/${COLLECTION}"

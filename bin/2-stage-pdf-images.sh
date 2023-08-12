@@ -46,5 +46,5 @@ rename 's/(?:-[0-9]{4}).tif$/.tif/' *.tif
 # ** Necessary for keeping a sequential series of PIDs for subsequent PDFs
 rename 's/page-([0-9]{3}).tif/sprintf("%05d$ENV{SUFFIX}.tif",$1+$ENV{OFFSET})/e' *.tif
 
-read -p "-> Check contents of ${HOME_OCR}/input/${COLLECTION}/${YEAR}/images" -n 1
+#read -p "-> Check contents of ${HOME_OCR}/input/${COLLECTION}/${YEAR}/images" -n 1
 ls ${HOME_OCR}/input/${COLLECTION}/${YEAR}/images
