@@ -36,11 +36,11 @@ cd ${HOME_OCR}
 python3 pdf-data/do-ocr.py -i input/${COLLECTION}/${YEAR}/images/ -o output/${COLLECTION}/${YEAR}/
 check_status $? do-ocr
 
-read -p "-> Check contents of ${HOME_OCR}/output/${COLLECTION}/${YEAR}" -n 1
+#read -p "-> Check contents of ${HOME_OCR}/output/${COLLECTION}/${YEAR}" -n 1
 ls ${HOME_OCR}/output/${COLLECTION}/${YEAR}
 
 # Populate spreadsheet
-read -p "-> Populate spreadsheet: ${COLLECTION}.csv?" -n 1
+#read -p "-> Populate spreadsheet: ${COLLECTION}.csv?" -n 1
 clear;python3 pdf-data/txt2csv.py -c ../cmhc/_data/${COLLECTION}.csv -t output/${COLLECTION}/${YEAR}/ -f label:"${LABEL}" -f key:${YEAR}${SUFFIX} -f ingest_date:${INGEST_DATE} -f layout:cmhc_item
 
-read -p "-> Check spreadsheet: libreoffice ${HOME_CMHC}/_data/${COLLECTION}.csv" -n 1
+#read -p "-> Check spreadsheet: libreoffice ${HOME_CMHC}/_data/${COLLECTION}.csv" -n 1
