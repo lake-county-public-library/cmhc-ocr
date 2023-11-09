@@ -18,4 +18,4 @@ RUN chmod 755 /root/change_id.sh && \
 
 USER MARMOT+awoods
 
-CMD ["bash"]
+#CMD ["bash"]
